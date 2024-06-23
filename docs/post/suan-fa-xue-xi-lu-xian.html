@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="# 算法·进阶石（algorithm-stone）—— 进击的每一步！
+
+<p align='left'>
+<a href='https://github.com/acm-clan/algorithm-stone' target='_blank'><img alt='GitHub' src='https://img.shields.io/github/stars/acm-clan/algorithm-stone?label=Stars&style=flat-square&logo=GitHub'></a>    <a href='https://oss.v8cloud.cn/markdown/72eeefe8497133dd56bbe3c56c794278.png' target='_blank'><img src='https://img.shields.io/badge/公众号-@ACM算法日常-000000.svg?style=flat-square&logo=WeChat'></a>    <a href='https://www.zhihu.com/people/acm-clan' target='_blank'><img src='https://img.shields.io/badge/知乎-@ACM算法日常-000000.svg?style=flat-square&logo=Zhihu'></a>
+</p>
+
+本项目是公众号《ACM算法日常》整理的一个算法学习路线图。">
+<meta property="og:title" content="算法学习路线">
+<meta property="og:description" content="# 算法·进阶石（algorithm-stone）—— 进击的每一步！
+
+<p align='left'>
+<a href='https://github.com/acm-clan/algorithm-stone' target='_blank'><img alt='GitHub' src='https://img.shields.io/github/stars/acm-clan/algorithm-stone?label=Stars&style=flat-square&logo=GitHub'></a>    <a href='https://oss.v8cloud.cn/markdown/72eeefe8497133dd56bbe3c56c794278.png' target='_blank'><img src='https://img.shields.io/badge/公众号-@ACM算法日常-000000.svg?style=flat-square&logo=WeChat'></a>    <a href='https://www.zhihu.com/people/acm-clan' target='_blank'><img src='https://img.shields.io/badge/知乎-@ACM算法日常-000000.svg?style=flat-square&logo=Zhihu'></a>
+</p>
+
+本项目是公众号《ACM算法日常》整理的一个算法学习路线图。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://diner888.github.io/post/suan-fa-xue-xi-lu-xian.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>算法学习路线</title>
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">算法学习路线</h1>
+<div class="title-right">
+    <a href="https://diner888.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/diner888/diner888.github.io/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h1>算法·进阶石（algorithm-stone）—— 进击的每一步！</h1>
+<p align="left">
+<a href="https://github.com/acm-clan/algorithm-stone"><img alt="GitHub" src="https://camo.githubusercontent.com/1b9fa4570933ae955447befc1f51ceff3571edd3ba2e70dd69c92a6c13a596e1/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f61636d2d636c616e2f616c676f726974686d2d73746f6e653f6c6162656c3d5374617273267374796c653d666c61742d737175617265266c6f676f3d476974487562" data-canonical-src="https://img.shields.io/github/stars/acm-clan/algorithm-stone?label=Stars&amp;style=flat-square&amp;logo=GitHub" style="max-width: 100%;"></a>    <a href="https://oss.v8cloud.cn/markdown/72eeefe8497133dd56bbe3c56c794278.png" rel="nofollow"><img src="https://camo.githubusercontent.com/1a052c0d53dcd023bef09dcb79c3d99071a59542835e7e590532069524f67447/68747470733a2f2f696d672e736869656c64732e696f2f62616467652fe585ace4bc97e58fb72d4041434de7ae97e6b395e697a5e5b8b82d3030303030302e7376673f7374796c653d666c61742d737175617265266c6f676f3d576543686174" data-canonical-src="https://img.shields.io/badge/公众号-@ACM算法日常-000000.svg?style=flat-square&amp;logo=WeChat" style="max-width: 100%;"></a>    <a href="https://www.zhihu.com/people/acm-clan" rel="nofollow"><img src="https://camo.githubusercontent.com/b2d4cde96f1628107881a2f5a06d5f56be3322dbad928927a5700eaeb8a1067d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652fe79fa5e4b98e2d4041434de7ae97e6b395e697a5e5b8b82d3030303030302e7376673f7374796c653d666c61742d737175617265266c6f676f3d5a68696875" data-canonical-src="https://img.shields.io/badge/知乎-@ACM算法日常-000000.svg?style=flat-square&amp;logo=Zhihu" style="max-width: 100%;"></a>
+</p>
+<p>本项目是公众号《ACM算法日常》整理的一个算法学习路线图。</p>
+<h3>使用说明：</h3>
+<p>1 fork本项目；<br>
+2 使用鼠标点击下面的图片，会打开一个svg文件，按照svg文件中题目从上到下从左往右的顺序刷题，题目顺序是精心编排的，减少做题的梯度；<br>
+3 使用vscode的leetcode插件做题；<br>
+4 将做过的题放到user目录中，可以点亮题目，svg图片中的蓝色实验瓶子是题解链接。</p>
+<blockquote>
+<p>Tip:点击svg文件中的题目，可以跳转到题目页面。</p>
+</blockquote>
+<h3>新手入门教程</h3>
+<p><a href="docs/how_to_use_git.md">新手入门git - 用颜值超高的github desktop参与开源项目</a><br>
+<a href="docs/how_to_use_vscode.md">新手入门vscode - 如何将宇宙最强vscode打造为刷题神器</a></p>
+<h3>国家集训队论文1999-2019</h3>
+<p><a href="https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/%E5%9B%BD%E5%AE%B6%E9%9B%86%E8%AE%AD%E9%98%9F%E8%AE%BA%E6%96%871999-2019.zip" rel="nofollow">国家集训队论文1999-2019</a></p>
+<h3>新手入门-算法书籍推荐</h3>
+<p><a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">01.数据结构与算法分析-C语言描述 详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">02.算法设计与分析基础  第3版 高清详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">03.算法引论：一种创造性方法 高清详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">04.编程原本 详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">05.C语言接口与实现：创建可重用软件的技术 详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">06.算法导论中文第三版 高清详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">06.算法导论英文第三版 高清详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">07.算法中文第4版 高清详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">07.算法英文第4版 高清详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">08.算法竞赛入门经典第2版 高清详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">09.挑战程序设计竞赛1第2版 高清详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">10.挑战程序设计竞赛2 高清详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">11.算法竞赛进阶指南 高清详细书签.pdf</a><br><br>
+<a href="https://www.aliyundrive.com/s/wKKdv4XAazq" rel="nofollow">12.漫画算法-小灰的算法之旅 高清详细书签.pdf</a><br></p>
+<h3>Leetcode路线图合集</h3>
+<h4>Tree路线图（进度100%）</h4>
+<ol>
+<li><a href="https://mp.weixin.qq.com/s/2AfnnCALekwo4K_okRdpNg" rel="nofollow">动画红黑树，旋转的艺术</a></li>
+</ol>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_tree.svg"><img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_tree.svg" style="max-width: 100%;"></a></p>
+<h4>动态规划路线图（进度40%）</h4>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_dp.svg"><img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_dp.svg" style="max-width: 100%;"></a></p>
+
+<h4>堆栈队列路线图（进度100%）</h4>
+<ol>
+<li><a href="https://mp.weixin.qq.com/s/rF5bohHf3XfstGkjBawBuw" rel="nofollow">算法动画秒懂并查集</a></li>
+<li><a href="https://mp.weixin.qq.com/s/XsYD1lkiILcMcd3_vRws7A" rel="nofollow">动画解说单调栈</a></li>
+<li><a href="https://mp.weixin.qq.com/s/InpmYAfeesc7MHMCV50b-Q" rel="nofollow">滑动窗口入门</a></li>
+</ol>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_heap_stack_queue.svg"><img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_heap_stack_queue.svg" style="max-width: 100%;"></a></p>
+<h4>链表路线图（进度100%）</h4>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_linked_list.svg"><img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_linked_list.svg" style="max-width: 100%;"></a></p>
+<h4>二分查找（进度100%）</h4>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_binary_search.svg"><img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_binary_search.svg" style="max-width: 100%;"></a></p>
+<h4>几何题路线图（进度100%）</h4>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_geometry.svg"><img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_geometry.svg" style="max-width: 100%;"></a></p>
+<h4>小众题路线图（进度100%）</h4>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_mini.svg"><img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_mini.svg" style="max-width: 100%;"></a></p>
+<h3>Codeforces Div.3 Div.2路线图（进度1%）</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/codeforces.svg"><img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/codeforces.svg" style="max-width: 100%;"></a></p>
+<h3>安装开发环境</h3>
+<p>详细的开发说明参考：<a href="https://github.com/acm-clan/algorithm-stone/blob/main/docs/dev_zh.md">开发文档</a></p>
+<h3>Leetcode规划模块</h3>
+<p>以下是Leetcode所有模块，按照题目数量进行排序。</p>
+<table role="table">
+<thead>
+<tr>
+<th>中文名称</th>
+<th>英文名称</th>
+<th>题目数量</th>
+<th>整理人</th>
+<th>进度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/rejection-sampling" rel="nofollow">拒绝采样</a></td>
+<td><code class="notranslate">rejection-sampling</code></td>
+<td>2</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/reservoir-sampling" rel="nofollow">蓄水池采样</a></td>
+<td><code class="notranslate">reservoir-sampling</code></td>
+<td>2</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/memoization" rel="nofollow">记忆</a></td>
+<td>memoization</td>
+<td>3</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/line-sweep" rel="nofollow">扫描线</a></td>
+<td>line-sweep</td>
+<td>4</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/topological-sort" rel="nofollow">拓扑排序</a></td>
+<td><code class="notranslate">topological-sort</code></td>
+<td>4</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/binary-search-tree" rel="nofollow">二分查找树</a></td>
+<td><code class="notranslate">binary-search-tree</code></td>
+<td>5</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/binary-indexed-tree" rel="nofollow">树状数组</a></td>
+<td><code class="notranslate">binary-indexed-tree</code></td>
+<td>6</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/random" rel="nofollow">随机数</a></td>
+<td><code class="notranslate">random</code></td>
+<td>6</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/brainteaser" rel="nofollow">智商题</a></td>
+<td><code class="notranslate">brainteaser</code></td>
+<td>7</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/minimax" rel="nofollow">最小最大值</a></td>
+<td><code class="notranslate">minimax</code></td>
+<td>7</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/queue" rel="nofollow">队列</a></td>
+<td>queue</td>
+<td>10</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/geometry" rel="nofollow">几何题</a></td>
+<td>geometry</td>
+<td>12</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/ordered-map" rel="nofollow">排序Map</a></td>
+<td>ordered-map</td>
+<td>13</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/segment-tree" rel="nofollow">线段树</a></td>
+<td>segment-tree</td>
+<td>15</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/trie" rel="nofollow">Trie树</a></td>
+<td>trie</td>
+<td>17</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/sliding-window" rel="nofollow">滑动窗口</a></td>
+<td>sliding-window</td>
+<td>25</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/divide-and-conquer" rel="nofollow">分治算法</a></td>
+<td>divide-and-conquer</td>
+<td>28</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/union-find" rel="nofollow">并查集</a></td>
+<td>union-find</td>
+<td>29</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/recursion" rel="nofollow">递归</a></td>
+<td>recursion</td>
+<td>40</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/graph" rel="nofollow">图论</a></td>
+<td>graph</td>
+<td>43</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/heap" rel="nofollow">堆</a></td>
+<td>heap</td>
+<td>43</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/design" rel="nofollow">设计题</a></td>
+<td>design</td>
+<td>47</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/linked-list" rel="nofollow">链表</a></td>
+<td><code class="notranslate">linked-list</code></td>
+<td>51</td>
+<td><code class="notranslate">chocolate</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/backtracking" rel="nofollow">回溯算法</a></td>
+<td>backtracking</td>
+<td>61</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/bit-manipulation" rel="nofollow">位运算</a></td>
+<td>bit-manipulation</td>
+<td>66</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/stack" rel="nofollow">栈</a></td>
+<td>stack</td>
+<td>66</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/sort" rel="nofollow">排序</a></td>
+<td>sort</td>
+<td>68</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/two-pointers" rel="nofollow">双指针</a></td>
+<td>two-pointers</td>
+<td>73</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/breadth-first-search" rel="nofollow">BFS搜索</a></td>
+<td>breadth-first-search</td>
+<td>76</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/binary-search" rel="nofollow">二分查找</a></td>
+<td>binary-search</td>
+<td>97</td>
+<td><code class="notranslate">dansen</code></td>
+<td>30%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/hash-table" rel="nofollow">Hash表</a></td>
+<td>hash-table</td>
+<td>121</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/greedy" rel="nofollow">贪心算法</a></td>
+<td>greedy</td>
+<td>128</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/depth-first-search" rel="nofollow">DFS搜索</a></td>
+<td>depth-first-search</td>
+<td>137</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/tree" rel="nofollow">树</a></td>
+<td><code class="notranslate">tree</code></td>
+<td>142</td>
+<td><code class="notranslate">dansen</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/math" rel="nofollow">数学题</a></td>
+<td>math</td>
+<td>191</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/string" rel="nofollow">字符串</a></td>
+<td>string</td>
+<td>209</td>
+<td></td>
+<td>0%</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/dynamic-programming" rel="nofollow">动态规划</a></td>
+<td><code class="notranslate">dynamic-programming</code></td>
+<td>240</td>
+<td><code class="notranslate">dansen</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/tag/array" rel="nofollow">数组</a></td>
+<td>array</td>
+<td>310</td>
+<td></td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+</div>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://diner888.github.io"> Blog Title </a>
+<p>
+<span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
+</p>
+
+<script>
+if(""!=""){
+    var now=new Date();
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("year").innerHTML=now.getFullYear();
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+}
+</script>
+</div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","diner888/diner888.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+</script>
+
+
+</html>
